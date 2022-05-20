@@ -4,6 +4,7 @@ let nota3: number;
 let nombre: string = ".";
 let aux: number;
 let contador: number;
+let notaFinal: number;
 
 while (nombre !== "") {
   nombre = String(prompt("Ingrese el nombre del alumno: "));
@@ -33,4 +34,6 @@ while (nombre !== "") {
       } else console.log("error en la nota 3");
     }
   }
+  notaFinal = nota1 + nota2 + nota3;
+  console.log("La notafinal de " + nombre + " es: " + notaFinal);
 }
